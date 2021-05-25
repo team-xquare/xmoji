@@ -1,0 +1,93 @@
+{
+  "name": "gitmoji-cli",
+  "version": "4.1.0",
+  "description": "A gitmoji client for using emojis on commit messages.",
+  "engines": {
+    "node": ">=12"
+  },
+  "bin": {
+    "gitmoji": "lib/cli.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "clean": "rm -rf lib",
+    "coverage": "codecov",
+    "flow": "flow",
+    "lint": "prettier --check src/**/*.js",
+    "package": "pkg . --output ./bin/gitmoji --targets latest-linux-x64,latest-macos-x64,latest-win-x64",
+    "prepublishOnly": "yarn run lint && yarn run flow && yarn run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-xquare/gitmoji-cli.git"
+  },
+  "keywords": [
+    "gitmoji",
+    "emoji",
+    "carloscuesta",
+    "commit"
+  ],
+  "author": {
+    "name": "smoothbear",
+    "email": "smoothbear04@gmail.com",
+    "url": "https://smoothbear.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/team-xquare/git-emoji-utils/issues"
+  },
+  "homepage": "https://github.com/team-xquare/gitmoji-cli#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "conf": "^10.0.1",
+    "execa": "^5.0.0",
+    "fuse.js": "^6.4.1",
+    "inquirer": "^7.0.0",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "meow": "^9.0.0",
+    "node-fetch": "^2.6.0",
+    "ora": "^5.0.0",
+    "path-exists": "4.0.0",
+    "proxy-agent": "^4.0.1",
+    "update-notifier": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-flow": "^7.10.1",
+    "codecov": "^3.6.1",
+    "flow-bin": "^0.110.1",
+    "lint-staged": "^11.0.0",
+    "pkg": "^5.0.0",
+    "prettier": "^2.1.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "10"
+          }
+        }
+      ],
+      "@babel/preset-flow"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write src/**/*.js",
+      "git add"
+    ]
+  }
+}

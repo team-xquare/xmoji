@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+node_modules/
+coverage/
+lib/
+bin/
+package-lock.json
+
+# VS Code settings
+.vscode
