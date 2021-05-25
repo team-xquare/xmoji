@@ -3,8 +3,6 @@ import inquirer from 'inquirer'
 
 import configurationVault from '../../utils/configurationVault'
 import filterGitmojis from '../../utils/filterGitmojis'
-import getDefaultCommitContent from '../../utils/getDefaultCommitContent'
-import { type CommitMode } from './index'
 import guard from './guard'
 
 const TITLE_MAX_LENGTH_COUNT: number = 48
@@ -27,9 +25,7 @@ export type Answers = {
   message: string
 }
 
-export default (gitmojis: Array<Gitmoji>, mode: CommitMode): Array<Object> => {
-  const { issueNumber, domain, title, message } = getDefaultCommitContent(mode)
-
+export default (gitmojis: Array<Gitmoji>): Array<Object> => {
   return [
     {
       name: 'gitmoji',
@@ -57,13 +53,13 @@ export default (gitmojis: Array<Gitmoji>, mode: CommitMode): Array<Object> => {
       name: 'issue number',
       message: 'Enter the issue number:',
       validate: guard.issueNumber,
-      ...(issueNumber ? { default: issueNumber } : {})
+      ...({})
     }, 
     {
       name: 'domain',
       message: 'Enter the domain name:',
       validate: guard.domain,
-      ...(domain ? { default: domain } : {})
+      ...({})
     },
     {
       name: 'title',
@@ -74,13 +70,13 @@ export default (gitmojis: Array<Gitmoji>, mode: CommitMode): Array<Object> => {
           (title || input).length
         }/${TITLE_MAX_LENGTH_COUNT}]: ${input}`
       },
-      ...(title ? { default: title } : {})
+      ...({})
     },
     {
       name: 'message',
       message: 'Enter the commit message:',
       validate: guard.message,
-      ...(message ? { default: message } : {})
+      ...({})
     }
   ]
 }

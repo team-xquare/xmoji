@@ -37,7 +37,7 @@ const cli = meow(
 )
 
 export const options = {
-  commit: () => commands.commit('client'),
+  commit: () => commands.commit(),
   config: () => commands.config(),
   list: () => commands.list(),
   search: () => cli.input.map((input) => commands.search(input)),
