@@ -29,7 +29,7 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
   return [
     {
       name: 'gitmoji',
-      message: 'Choose a gitmoji:',
+      message: '이모지를 선택하세요:',
       type: 'autocomplete',
       source: (answersSoFor: any, input: string) => {
         return Promise.resolve(
@@ -51,19 +51,19 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
       : []),
     {
       name: 'issue',
-      message: 'Enter the issue number:',
+      message: '이슈 번호를 입력해주세요:',
       validate: guard.issueNumber,
       ...({})
     }, 
     {
       name: 'domain',
-      message: 'Enter the domain name:',
+      message: '도메인 이름을 입력해주세요:',
       validate: guard.domain,
       ...({})
     },
     {
       name: 'title',
-      message: 'Enter the commit title:',
+      message: '커밋 제목을 입력해주세요:',
       validate: guard.title,
       transformer: (input: string) => {
         return `[${
@@ -74,7 +74,7 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
     },
     {
       name: 'message',
-      message: 'Enter the commit message:',
+      message: '커밋 메세지를 입력해주세요:',
       validate: guard.message,
       ...({})
     }
