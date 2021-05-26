@@ -19,7 +19,7 @@ export type Gitmoji = {
 export type Answers = {
   gitmoji: string,
   scope?: string,
-  issueNumber?: string,
+  issue?: string,
   domain?: string,
   title: string,
   message: string
