@@ -13,16 +13,6 @@ const withClient = async (answers: Answers) => {
 
     const isSigned = configurationVault.getSignedCommit() ? ['-S'] : []
 
-    if (await isHookCreated()) {
-      return console.log(
-        chalk.red(
-          "\nError: Seems that you're trying to commit with the cli " +
-            'but you have the hook created.\nIf you want to use the `gitmoji -c` ' +
-            'The hook must be used only when you want to commit with the instruction `git commit`\n'
-        )
-      )
-    }
-
     if (configurationVault.getAutoAdd()) await execa('git', ['add', '.'])
 
     const { stdout } = await execa('git', [
