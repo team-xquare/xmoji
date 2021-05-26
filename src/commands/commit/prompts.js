@@ -50,17 +50,17 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
         ]
       : []),
     {
+      name: 'issue',
+      message: 'Enter the issue number:',
+      validate: guard.issueNumber,
+      ...({})
+    }, 
+    {
       name: 'domain',
       message: 'Enter the domain name:',
       validate: guard.domain,
       ...({})
     },
-    {
-      name: 'issue number',
-      message: 'Enter the issue number:',
-      validate: guard.issueNumber,
-      ...({})
-    }, 
     {
       name: 'title',
       message: 'Enter the commit title:',
