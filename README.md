@@ -1,8 +1,8 @@
-# Git emoji utils
+# Xmoji
 
 ![npm-download-badge](https://img.shields.io/node/v/xquare-gitmoji-cli) [![npm version](https://badge.fury.io/js/xquare-gitmoji-cli.svg)](https://badge.fury.io/js/xquare-gitmoji-cli)
 
-## Git emoji utils?
+## Xmoji?
 
 [XQUARE 커밋 메세지의 형식](https://github.com/team-xquare/README.md)에 맞게 작성하는 것을 도와주는 cli입니다.
 
@@ -14,7 +14,7 @@
 
 ## 사용 방법
 
-### ```gitmoji -c``` or ```gitmoji --commit```
+### ```xmoji -c``` or ```xmoji --commit```
 
 Commit message를 작성합니다.
 
@@ -30,7 +30,7 @@ Commit message를 작성합니다.
 
 ------------------------------------------------
 
-### ```gitmoji -g``` or ```gitmoji --config```
+### ```xmoji -g``` or ```xmoji --config```
 
 gitmoji를 설정합니다.
 
@@ -41,14 +41,14 @@ gitmoji를 설정합니다.
 
 ------------------------------------------------
 
-### ```gitmoji -l``` or ```gitmoji --list```
+### ```xmoji -l``` or ```xmoji --list```
 현재 gitmoji로 사용할 수 있는 이모지 리스트를 봅니다.
 
 
 
 ------------------------------------------------
 
-### ```gitmoji -s``` or ```gitmoji --search```
+### ```xmoji -s``` or ```xmoji --search```
 
 현재 gitmoji로 사용할 수 있는 이모지 리스트에서 원하는 이모지를 찾습니다.
 
@@ -56,7 +56,7 @@ gitmoji를 설정합니다.
 
 ------------------------------------------------
 
-### ```gitmoji -u``` or ```gitmoji --update```
+### ```xmoji -u``` or ```xmoji --update```
 
 Gitmoji server에서 이모지 리스트를 받아 새로 고침을 진행합니다.
 
@@ -64,6 +64,6 @@ Gitmoji server에서 이모지 리스트를 받아 새로 고침을 진행합니
 
 ------------------------------------------------
 
-### ```gitmoji -v``` or ```gitmoji --version```
+### ```xmoji -v``` or ```xmoji --version```
 
 현재 설치되어 있는 gitmoji version을 봅니다.
