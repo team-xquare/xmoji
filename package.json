@@ -1,6 +1,6 @@
 {
   "name": "xquare-gitmoji-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A gitmoji client for using emojis on commit messages. (For xquare members)",
   "engines": {
     "node": ">=12"
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/team-xquare/gitmoji-cli.git"
+    "url": "git+https://github.com/team-xquare/git-emoji-utils.git"
   },
   "keywords": [
     "gitmoji",
@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/team-xquare/git-emoji-utils/issues"
   },
-  "homepage": "https://github.com/team-xquare/gitmoji-cli#readme",
+  "homepage": "https://github.com/team-xquare/git-emoji-utils#readme",
   "dependencies": {
     "chalk": "^4.1.0",
     "conf": "^10.0.1",
