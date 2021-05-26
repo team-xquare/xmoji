@@ -1,5 +1,7 @@
 # Git emoji utils
 
+![npm-download-badge](https://img.shields.io/node/v/xquare-gitmoji-cli) ![npm-version](https://img.shields.io/npm/v/xquare-gitmoji-cli) 
+
 ## Git emoji utils?
 
 [XQUARE 커밋 메세지의 형식](https://github.com/team-xquare/README.md)에 맞게 작성하는 것을 도와주는 cli입니다.
