@@ -1,6 +1,6 @@
 {
   "name": "xquare-gitmoji-cli",
-  "version": "0.0.2",
+  "version": "1.0.3",
   "description": "A gitmoji client for using emojis on commit messages. (For xquare members)",
   "engines": {
     "node": ">=12"
