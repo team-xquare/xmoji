@@ -8,9 +8,6 @@ import { type Answers } from '../prompts'
 
 const withClient = async (answers: Answers) => {
   try {
-    if (answers.issue) {
-      console.log(answers.issue)
-    }
     const scope = answers.scope ? `(${answers.scope}): ` : ''
     const title = `${answers.gitmoji} ::${answers.issue ? ' (#' + answers.issue + ')' : ''}${answers.domain ? ` [${answers.domain}]` : ''} ${scope}${answers.title}`
 
