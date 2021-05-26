@@ -49,7 +49,7 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
           }
         ]
       : []),
-   {
+    {
       name: 'issue number',
       message: 'Enter the issue number:',
       validate: guard.issueNumber,
@@ -67,9 +67,9 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
       validate: guard.title,
       transformer: (input: string) => {
         return `[${
-          (title || input).length
+          (input).length
         }/${TITLE_MAX_LENGTH_COUNT}]: ${input}`
-      },
+    },
       ...({})
     },
     {

@@ -1,6 +1,5 @@
 // @flow
 import execa from 'execa'
-import fs from 'fs'
 import chalk from 'chalk'
 
 import isHookCreated from '../../../utils/isHookCreated'
@@ -10,8 +9,7 @@ import { type Answers } from '../prompts'
 const withClient = async (answers: Answers) => {
   try {
     const scope = answers.scope ? `(${answers.scope}): ` : ''
-    const title = `${answers.gitmoji} ::${answers.issueNumber ? ` (#${answers.issueNumber})` : ''}
-    ${answers.domain ? ` [${answers.domain}]` : ''} ${scope}${answers.title}`
+    const title = `${answers.gitmoji} ::${answers.issueNumber ? ' #'+answers.issueNumber : ''}${answers.domain ? ` [${answers.domain}]` : ''} ${scope}${answers.title}`
 
     const isSigned = configurationVault.getSignedCommit() ? ['-S'] : []
 
