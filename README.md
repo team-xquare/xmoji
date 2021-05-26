@@ -1,6 +1,6 @@
 # Xmoji
 
-![npm-download-badge](https://img.shields.io/node/v/xquare-gitmoji-cli) [![npm version](https://badge.fury.io/js/xquare-gitmoji-cli.svg)](https://badge.fury.io/js/xquare-gitmoji-cli)
+![npm-download-badge](https://img.shields.io/node/v/xquare-gitmoji-cli) [![npm version](https://badge.fury.io/js/%40xquare%2Fxmoji.svg)](https://badge.fury.io/js/%40xquare%2Fxmoji)
 
 ## Xmoji?
 
