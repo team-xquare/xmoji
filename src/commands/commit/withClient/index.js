@@ -18,7 +18,6 @@ const withClient = async (answers: Answers) => {
         chalk.red(
           "\nError: Seems that you're trying to commit with the cli " +
             'but you have the hook created.\nIf you want to use the `gitmoji -c` ' +
-            'command you have to remove the hook with the command `gitmoji -r`. \n' +
             'The hook must be used only when you want to commit with the instruction `git commit`\n'
         )
       )
