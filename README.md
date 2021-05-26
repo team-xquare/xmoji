@@ -1,6 +1,6 @@
 # Git emoji utils
 
-![npm-download-badge](https://img.shields.io/node/v/xquare-gitmoji-cli) ![npm-version](https://img.shields.io/npm/v/xquare-gitmoji-cli) 
+![npm-download-badge](https://img.shields.io/node/v/xquare-gitmoji-cli) [![npm version](https://badge.fury.io/js/xquare-gitmoji-cli.svg)](https://badge.fury.io/js/xquare-gitmoji-cli)
 
 ## Git emoji utils?
 
