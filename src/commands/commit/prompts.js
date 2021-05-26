@@ -53,6 +53,9 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
       name: 'issue number',
       message: 'Enter the issue number:',
       validate: guard.issueNumber,
+      transformer: (input: string) => {
+        return input
+      },
       ...({})
     }, 
     {
