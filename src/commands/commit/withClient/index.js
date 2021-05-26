@@ -9,7 +9,7 @@ import { type Answers } from '../prompts'
 const withClient = async (answers: Answers) => {
   try {
     const scope = answers.scope ? `(${answers.scope}): ` : ''
-    const title = `${answers.gitmoji} ::${answers.issue ? ' (#'+answers.issueNumber+')' : ''}${answers.domain ? ` [${answers.domain}]` : ''} ${scope}${answers.title}`
+    const title = `${answers.gitmoji} ::${answers.issue ? ' (#'+answers.issue+')' : ''}${answers.domain ? ` [${answers.domain}]` : ''} ${scope}${answers.title}`
 
     const isSigned = configurationVault.getSignedCommit() ? ['-S'] : []
 
