@@ -1,12 +1,12 @@
 {
-  "name": "xquare-gitmoji-cli",
-  "version": "1.0.3",
-  "description": "A gitmoji client for using emojis on commit messages. (For xquare members)",
+  "name": "@xquare/xmoji",
+  "version": "1.0.0",
+  "description": "A git client for using emojis on commit messages. (For xquare members)",
   "engines": {
     "node": ">=12"
   },
   "bin": {
-    "gitmoji": "lib/cli.js"
+    "xmoji": "lib/cli.js"
   },
   "files": [
     "lib"
@@ -17,14 +17,14 @@
     "coverage": "codecov",
     "flow": "flow",
     "lint": "prettier --check src/**/*.js",
-    "package": "pkg . --output ./bin/gitmoji --targets latest-linux-x64,latest-macos-x64,latest-win-x64"
+    "package": "pkg . --output ./bin/xmoji --targets latest-linux-x64,latest-macos-x64,latest-win-x64"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/team-xquare/git-emoji-utils.git"
   },
   "keywords": [
-    "gitmoji",
+    "xmoji",
     "emoji",
     "carloscuesta",
     "commit"
