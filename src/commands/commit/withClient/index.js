@@ -6,6 +6,7 @@ import isHookCreated from '../../../utils/isHookCreated'
 import configurationVault from '../../../utils/configurationVault'
 import { type Answers } from '../prompts'
 
+//
 const withClient = async (answers: Answers) => {
   try {
     const scope = answers.scope ? `(${answers.scope}): ` : ''
