@@ -1,8 +1,6 @@
 // @flow
 import execa from 'execa'
-import chalk from 'chalk'
 
-import isHookCreated from '../../../utils/isHookCreated'
 import configurationVault from '../../../utils/configurationVault'
 import { type Answers } from '../prompts'
 
