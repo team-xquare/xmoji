@@ -13,9 +13,16 @@
 이모지를 찾아 붙여넣기 혹은 직접 기입하는 불편한 점을 개선하기 위해 만들어졌습니다.
 
 ## 설치 방법
+### By using npm
 
 ```
 npm install -g @xquare/xmoji
+```
+
+### By using brew
+```
+brew tap smoothbear/cli
+brew install smoothbear/cli/xmoji
 ```
 
 ## 사용 방법
