@@ -10,9 +10,6 @@ const errors = {
 const issueNumber = (issueNumber: string) => 
   !isNaN(issueNumber) || issueNumber == null ? true : errors.issueNumber
 
-const domain = (domain: string) =>
-  domain.includes('`') ? errors.domain : true
-
 const title = (title: string) =>
   !title || title.includes('`') ? errors.title : true
 
@@ -23,7 +20,6 @@ const scope = (scope: string) => (scope.includes('`') ? errors.scope : true)
 
 export default {
   issueNumber,
-  domain,
   message,
   scope,
   title

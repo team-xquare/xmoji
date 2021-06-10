@@ -20,7 +20,6 @@ export type Answers = {
   gitmoji: string,
   scope?: string,
   issue?: string,
-  domain?: string,
   title: string,
   message: string
 }
@@ -55,12 +54,6 @@ export default (gitmojis: Array<Gitmoji>): Array<Object> => {
       validate: guard.issueNumber,
       ...({})
     }, 
-    {
-      name: 'domain',
-      message: '도메인 이름을 입력해주세요:',
-      validate: guard.domain,
-      ...({})
-    },
     {
       name: 'title',
       message: '커밋 제목을 입력해주세요:',
